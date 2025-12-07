@@ -33,9 +33,10 @@ all_abilities = [a['ability']['name'] for a in all_abilities]
 if Pokemon_info:
     print(f"Name   : {Pokemon_info["name"].capitalize()}")
     print(f"Id     : {Pokemon_info["id"]}")
-    print(f"Height : {Pokemon_info["height"]}")
-    print(f"Weight : {Pokemon_info["weight"]}")
+    print(f"Height : {Pokemon_info["height"]/10}")
+    print(f"Weight : {Pokemon_info["weight"]/10}")
     move_names = [m['move']['name'] for m in random_moves]
     print(f"Moves : {move_names}")  
     print(f"Abilities : {all_abilities}")
+
 
